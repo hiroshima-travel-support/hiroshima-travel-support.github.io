@@ -23,15 +23,6 @@ h1, h2, h3, p {
   flex-direction: column;
 }
 
-.hero-image {
-  position: relative;
-  background:
-    linear-gradient(rgba(247, 239, 229, 0.82), rgba(234, 244, 244, 0.88)),
-    url("images/miyajima.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 nav {
   max-width: 1100px;
   width: 100%;
@@ -52,7 +43,6 @@ nav {
   border: 1px solid #1f2933;
   padding: 8px 16px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
 }
 
 .hero-content {
@@ -67,7 +57,6 @@ nav {
   text-transform: uppercase;
   font-size: 13px;
   color: #5f6c72;
-  margin-bottom: 12px;
 }
 
 h1 {
@@ -105,7 +94,6 @@ h1 {
 .secondary {
   border: 1px solid #1f2933;
   color: #1f2933;
-  background: rgba(255, 255, 255, 0.55);
 }
 
 .section {
@@ -140,12 +128,10 @@ h1 {
   border-radius: 20px;
   padding: 24px;
   background: #ffffff;
-  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
 }
 
 .card h3 {
   margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .tagline {
@@ -171,8 +157,7 @@ h1 {
 
 .light p {
   max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .price-box {
@@ -182,7 +167,6 @@ h1 {
   padding: 32px;
   border-radius: 24px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
 }
 
 .big-price {
@@ -195,49 +179,6 @@ h1 {
   font-size: 14px;
   color: #5f6c72;
   margin-bottom: 0;
-}
-
-.experience {
-  text-align: center;
-}
-
-.experience p {
-  max-width: 760px;
-  margin: 0 auto 32px;
-  font-size: 18px;
-}
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.photo-grid img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 28px;
-  box-shadow: 0 16px 40px rgba(31, 41, 51, 0.12);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.about-photo-wrap {
-  width: 100%;
-}
-
-.about-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 32px;
-  box-shadow: 0 20px 50px rgba(31, 41, 51, 0.15);
 }
 
 .about p {
@@ -257,7 +198,6 @@ h1 {
   border-radius: 20px;
   padding: 22px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
 }
 
 .step span {
@@ -293,8 +233,8 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 20px;
+  .cards {
+    grid-template-columns: 1fr;
   }
 
   nav {
@@ -304,41 +244,6 @@ footer p {
 
   .hero-content {
     padding: 60px 10px;
-  }
-
-  h1 {
-    font-size: clamp(40px, 12vw, 58px);
-  }
-
-  .section {
-    padding: 64px 20px;
-  }
-
-  .section h2 {
-    font-size: 30px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-grid img {
-    height: 260px;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .about-photo {
-    max-width: 320px;
-    margin: 0 auto;
-    display: block;
   }
 
   .steps {
