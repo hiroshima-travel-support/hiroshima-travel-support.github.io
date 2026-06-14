@@ -204,6 +204,7 @@ h1 {
   border: 1px solid #e5e7eb;
 }
 
+
 .step span {
   display: inline-flex;
   width: 34px;
@@ -368,4 +369,52 @@ footer p {
 }
 .email-link {
   margin-top: 28px;
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin: 36px auto 28px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
+  text-align: center;
+}
+
+.contact-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.qr-code {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 16px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.contact-card p {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.email-link {
+  margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
 }
