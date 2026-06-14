@@ -418,3 +418,19 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+.profile-details {
+  margin-top: 22px;
+  padding: 18px 20px;
+  background: #f7f7f7;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.profile-details p {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.profile-details p:last-child {
+  margin-bottom: 0;
+}
