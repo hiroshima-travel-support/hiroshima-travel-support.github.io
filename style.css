@@ -18,7 +18,11 @@ h1, h2, h3, p {
 .hero {
   min-height: 100vh;
   padding: 24px;
-  background: linear-gradient(135deg, #f7efe5, #eaf4f4);
+  background:
+    linear-gradient(rgba(247, 239, 229, 0.72), rgba(234, 244, 244, 0.78)),
+    url("images/miyajima-torii.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
 }
