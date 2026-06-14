@@ -434,3 +434,58 @@ footer p {
 .profile-details p:last-child {
   margin-bottom: 0;
 }
+.single-tour-card {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(31, 41, 51, 0.08);
+}
+
+.single-tour-card h3 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.single-tour-card p {
+  font-size: 17px;
+}
+
+.tour-list {
+  margin: 24px 0;
+  padding-left: 22px;
+}
+
+.tour-list li {
+  margin-bottom: 10px;
+}
+
+.tour-price {
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f7efe5;
+}
+
+.tour-price strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.tour-price span {
+  color: #5f6c72;
+}
+
+@media (max-width: 768px) {
+  .single-tour-card {
+    padding: 26px 22px;
+  }
+
+  .single-tour-card h3 {
+    font-size: 28px;
+  }
+}
